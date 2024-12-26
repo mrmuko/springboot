@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
+/**
+ * Entity use the table head from Schema for internal use
+ */
 @Entity
 @Getter @Setter @ToString @AllArgsConstructor @NoArgsConstructor
 public class Accounts extends BaseEntity {
@@ -21,6 +24,6 @@ public class Accounts extends BaseEntity {
     @Column(name = "mobile_number") //must because we have different name in schema
     private String mobileNumber;
 
-    @Column(name = "branch-address")
+    @Column(name = "branch_address")
     private String branchAddress;
 }
