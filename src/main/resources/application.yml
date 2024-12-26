@@ -7,10 +7,10 @@
 
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
+    url: jdbc:h2:mem:testdb3
     driverClassName: org.h2.Driver
     username: sa
-    password: ""
+    password: "1"
   h2:
     console:
       enabled: true
