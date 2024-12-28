@@ -21,9 +21,6 @@ public class Accounts extends BaseEntity {
     @Column(name = "account_type") //optional because we are using same name in schema
     private String accountType;
 
-    @Column(name = "mobile_number") //must because we have different name in schema
-    private String mobileNumber;
-
     @Column(name = "branch_address")
     private String branchAddress;
 }
